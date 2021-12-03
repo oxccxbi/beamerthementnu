@@ -11,12 +11,16 @@
 \setbeamercolor{page number in head/foot}{fg=white}
 \setbeamerfont{page number in head/foot}{size=\footnotesize, series=\mdseries}
 \defbeamertemplate*{sidebar left}{NTNUvertical}{%
-    \vskip4em%
-	\hspace*{.0075\paperwidth}\includegraphics[width=.055\paperwidth]{\ntnu@sidelogo}%
+	\vskip4em%
+	\hspace*{.0075\paperwidth}\includegraphics[width=.06\paperwidth]{\ntnu@sidelogo}%
+	\ifntnu@displayPartner%
+		\vskip4em%
+		\hspace*{.009\paperwidth}\includegraphics[width=.057\paperwidth]{\ntnu@partnerfootlogo}%
+	\fi%
 	\vfill
 	\begin{beamercolorbox}[ht=2em, wd=.075\paperwidth, dp=.02\paperwidth, center]{footline}%
 		\usebeamercolor[fg]{page number in head/foot}%
-    	\usebeamerfont{page number in head/foot}
+		\usebeamerfont{page number in head/foot}
 		\insertframenumber{}%
 		\ifntnu@displayTotalFrameNumber
 			\ /\ \inserttotalframenumber%
