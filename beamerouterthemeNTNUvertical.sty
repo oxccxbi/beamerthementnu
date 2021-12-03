@@ -15,7 +15,11 @@
 	\hspace*{.0075\paperwidth}\includegraphics[width=.06\paperwidth]{\ntnu@sidelogo}%
 	\ifntnu@displayPartner%
 		\vskip4em%
-		\hspace*{.009\paperwidth}\includegraphics[width=.057\paperwidth]{\ntnu@partnerfootlogo}%
+		\hspace*{.0075\paperwidth}
+		\begin{beamercolorbox}[ht=.6\paperheight, wd=.06\paperwidth, dp=0\paperwidth, center]{footline}%
+			\includegraphics[width=.06\paperwidth,height=.5\paperheight,keepaspectratio]{\ntnu@partnerfootlogo}%
+			\vskip2em%
+		\end{beamercolorbox}
 	\fi%
 	\vfill
 	\begin{beamercolorbox}[ht=2em, wd=.075\paperwidth, dp=.02\paperwidth, center]{footline}%
