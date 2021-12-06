@@ -32,6 +32,7 @@
 \newcommand{\titlelogo}[1]{\renewcommand{\ntnu@titlelogo}{#1}}
 \newcommand{\ntnu@name}{}
 \newcommand{\ntnu@sidelogo}{}
+\newcommand{\ntnu@footlogo}{}
 \newlength{\footlineheight}
 \newcommand{\ntnu@partnerlogo}{}
 \newcommand{\ntnu@partnerfootlogo}{}
@@ -53,6 +54,7 @@
 		\titlelogo{ntnu_bredde_eng_neg.png}%
 		\renewcommand{\ntnu@name}{Norwegian University of Science and Technology}
 		\renewcommand{\ntnu@sidelogo}{ntnu_alt_versjon_uten_slagord_neg.png}
+		\renewcommand{\ntnu@footlogo}{ntnu_uten_slagord_neg.png}
 		\partnerlogos{ntnu_bredde_eng.png}{ntnu_bredde_eng_neg.png}
 	\fi
 	\ifnum\pdf@strcmp{#1}{norsk}=\z@%
@@ -60,6 +62,7 @@
 		\titlelogo{ntnu_med_slagord_bredde_bokmaal_neg.png}%
 		\renewcommand{\ntnu@name}{Norges teknisk-naturvitenskapelige universitet}
 		\renewcommand{\ntnu@sidelogo}{ntnu_alt_versjon_uten_slagord_neg.png}
+		\renewcommand{\ntnu@footlogo}{ntnu_uten_slagord_neg.png}
 		\partnerlogos{ntnu_med_slagord_bredde_bokmaal.png}{ntnu_med_slagord_bredde_bokmaal_neg.png}
 	\fi
 }
